@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,65 +13,76 @@
             background-color: #f9f9f9;
             color: #333;
         }
+
         header {
             background-color: #333;
             color: #fff;
             padding: 15px 0;
             text-align: center;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
+
         header h1 {
             margin: 0;
             font-size: 2.5em;
             font-weight: 700;
         }
+
         .container {
             width: 90%;
             max-width: 1200px;
             margin: auto;
             padding: 20px 0;
         }
+
         .banner {
             width: 100%;
             height: 150px;
             object-fit: cover;
             margin-bottom: 20px;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
+
         .section-title {
             text-align: center;
             font-size: 2.5em;
             margin: 20px 0;
             color: #333;
         }
+
         .grid-container {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
             gap: 20px;
         }
+
         .product {
             background: #fff;
             padding: 20px;
             border-radius: 10px;
             text-align: center;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s;
         }
+
         .product:hover {
             transform: translateY(-10px);
         }
+
         .product img {
             width: 100%;
             height: auto;
             border-radius: 10px;
             margin-bottom: 15px;
         }
+
         .product h3 {
             margin: 10px 0;
             font-size: 1.5em;
             color: #333;
         }
+
         .product p {
             color: #666;
             overflow: hidden;
@@ -80,28 +92,64 @@
             -webkit-box-orient: vertical;
             margin: 10px 0;
         }
+
         .product span {
             font-weight: bold;
             font-size: 1.2em;
             color: #333;
         }
+
         .promotion {
             color: red !important;
             font-weight: bold;
             font-size: 1.2em;
         }
+
         .old-price {
             text-decoration: line-through;
             color: #888;
         }
+
         .about-us {
             background: #fff;
             padding: 20px;
             margin: 40px 0;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             line-height: 1.6;
         }
+
+        .versions {
+            background: #fff;
+            padding: 20px;
+            margin: 40px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            line-height: 1.6;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .versions span a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            padding: 10px 20px;
+            border: 2px solid #333;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .versions span a:hover {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .active-version {
+            background-color: #333;
+            color: #fff !important;
+        }
+
         footer {
             background-color: #333;
             color: #fff;
@@ -109,16 +157,19 @@
             padding: 20px 0;
             margin-top: 40px;
         }
+
         footer a {
             color: #fff;
             text-decoration: none;
             margin: 0 10px;
         }
+
         footer a:hover {
             text-decoration: underline;
         }
     </style>
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -132,45 +183,65 @@
             <div class="product">
                 <img src="images/image_1.webp" alt="T-Shirt 1">
                 <h3>Swirling Vibes Tee</h3>
-                <p>Dive into the dynamic blend of colors and abstract patterns with our Swirling Vibes Tee. Made from high-quality cotton for ultimate comfort and style.</p>
+                <p>Dive into the dynamic blend of colors and abstract patterns with our Swirling Vibes Tee. Made from
+                    high-quality cotton for ultimate comfort and style.</p>
                 <p>Price: <span>$19.99</span></p>
             </div>
             <div class="product">
                 <img src="images/image_2.webp" alt="T-Shirt 2">
                 <h3>Cosmic Waves Tee</h3>
-                <p>Ride the cosmic waves with this stylish and comfortable t-shirt. Its vibrant design and high-quality fabric make it a standout piece in any wardrobe.</p>
+                <p>Ride the cosmic waves with this stylish and comfortable t-shirt. Its vibrant design and high-quality
+                    fabric make it a standout piece in any wardrobe.</p>
                 <p class="old-price">$24.99</p>
                 <p class="promotion">Now: $14.99</p>
             </div>
             <div class="product">
                 <img src="images/image_3.webp" alt="T-Shirt 3">
                 <h3>Fiery Flow Tee</h3>
-                <p>Unleash your inner fire with our Fiery Flow Tee. Perfect for everyday wear, this t-shirt features a bold, flowing design that captures attention.</p>
+                <p>Unleash your inner fire with our Fiery Flow Tee. Perfect for everyday wear, this t-shirt features a
+                    bold, flowing design that captures attention.</p>
                 <p>Price: <span>$17.99</span></p>
             </div>
             <div class="product">
                 <img src="images/image_4.webp" alt="T-Shirt 4">
                 <h3>Urban Maze Tee</h3>
-                <p>Navigate the urban jungle with our Urban Maze Tee. This classic fit t-shirt features a modern maze pattern and is perfect for a contemporary look.</p>
+                <p>Navigate the urban jungle with our Urban Maze Tee. This classic fit t-shirt features a modern maze
+                    pattern and is perfect for a contemporary look.</p>
                 <p>Price: <span>$22.99</span></p>
             </div>
             <div class="product">
                 <img src="images/image_5.webp" alt="T-Shirt 5">
                 <h3>Artistic Swirl Tee</h3>
-                <p>Embrace the artistic swirl of colors in this unique tee. Available in multiple colors, it's crafted for those who love to stand out.</p>
+                <p>Embrace the artistic swirl of colors in this unique tee. Available in multiple colors, it's crafted
+                    for those who love to stand out.</p>
                 <p>Price: <span>$18.99</span></p>
             </div>
         </div>
         <div class="about-us">
             <h2>About Us</h2>
-            <p>TeeHurban was born out of a love for fashion and the vibrant energy of urban life. Our mission is to provide high-quality, stylish t-shirts that reflect the latest trends and the unique personalities of our customers. Each design is carefully crafted to ensure comfort, durability, and a touch of individuality.</p>
-            <p>We believe that fashion is not just about clothing; it's about expressing who you are. At TeeHurban, we are committed to offering a diverse range of designs that cater to different tastes and styles. Whether you're looking for something bold and eye-catching or simple and classic, we've got you covered.</p>
-            <p>Our journey started in a small studio, where a group of friends with a shared passion for creativity and streetwear came together. Today, TeeHurban has grown into a brand that prides itself on quality, innovation, and customer satisfaction. We are constantly inspired by the dynamic culture of the city and the ever-evolving world of fashion.</p>
-            <p>Thank you for being a part of our story. We hope our t-shirts bring you as much joy and inspiration as they bring us in creating them.</p>
+            <p>TeeHurban was born out of a love for fashion and the vibrant energy of urban life. Our mission is to
+                provide high-quality, stylish t-shirts that reflect the latest trends and the unique personalities of
+                our customers. Each design is carefully crafted to ensure comfort, durability, and a touch of
+                individuality.</p>
+            <p>We believe that fashion is not just about clothing; it's about expressing who you are. At TeeHurban, we
+                are committed to offering a diverse range of designs that cater to different tastes and styles. Whether
+                you're looking for something bold and eye-catching or simple and classic, we've got you covered.</p>
+            <p>Our journey started in a small studio, where a group of friends with a shared passion for creativity and
+                streetwear came together. Today, TeeHurban has grown into a brand that prides itself on quality,
+                innovation, and customer satisfaction. We are constantly inspired by the dynamic culture of the city and
+                the ever-evolving world of fashion.</p>
+            <p>Thank you for being a part of our story. We hope our t-shirts bring you as much joy and inspiration as
+                they bring us in creating them.</p>
+        </div>
+        <div class="versions">
+            <span><a class="active-version" href="index.html">Original Version</a></span>
+            <span><a href="index_javascript.html">Javascript Version</a></span>
         </div>
     </div>
     <footer>
-        <p>&copy; 2024 TeeHurban. All rights reserved. | <a href="contact.html">Contact Us</a> | <a href="privacy.html">Privacy Policy</a></p>
+        <p>&copy; 2024 TeeHurban. All rights reserved. | <a href="contact.html">Contact Us</a> | <a
+                href="privacy.html">Privacy Policy</a></p>
     </footer>
 </body>
+
 </html>
